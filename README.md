@@ -11,7 +11,7 @@
     + [BidMachine](#bidmachine-1)
 * [Select ads to show](#select-ads-to-show)
 * [BidOn-iOS-Mediation-SDK](#bidon-ios-mediation-sdk)
-    * [Get Started](#getstarted)
+    * [Get Started](#get-started)
     * [Logging](#logging)
     * [Initialization](#initialization)
     * [Loading](#loading)

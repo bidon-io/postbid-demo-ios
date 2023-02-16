@@ -11,6 +11,7 @@ xcuserdata/
 
 ## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
 build/
+release/
 DerivedData/
 *.moved-aside
 *.pbxuser
@@ -22,6 +23,9 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 
+# OS X
+.DS_Store
+
 ## Obj-C/Swift specific
 *.hmap
 
@@ -30,13 +34,32 @@ DerivedData/
 *.dSYM.zip
 *.dSYM
 
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+#
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+# Packages/
+# Package.pins
+# Package.resolved
+# *.xcodeproj
+#
+# Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
+# hence it is not needed unless you have added a package configuration file to your project
+# .swiftpm
+
+.build/
+
 # CocoaPods
 #
 # We recommend against adding the Pods directory to your .gitignore. However
 # you should judge for yourself, the pros and cons are mentioned at:
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
-# Pods/
+Pods/
+Podfile.lock
 #
 # Add this line if you want to avoid checking in source code from the Xcode workspace
 # *.xcworkspace
@@ -47,6 +70,10 @@ DerivedData/
 # Carthage/Checkouts
 
 Carthage/Build/
+
+# Accio dependency management
+Dependencies/
+.accio/
 
 # fastlane
 #

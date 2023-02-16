@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ABZ-dS-EdI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Banner-->
+        <scene sceneID="kHT-up-7xR">
+            <objects>
+                <viewController id="ClG-0x-kf3" customClass="Banner" customModule="BidMachineSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gtr-hW-vK4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLk-a8-206" customClass="BMMBanner">
+                                <rect key="frame" x="47" y="64" width="320" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="A9C-Gh-MbU"/>
+                                    <constraint firstAttribute="height" constant="50" id="MxF-lj-AIQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KmB-T3-V05"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YLk-a8-206" firstAttribute="top" secondItem="KmB-T3-V05" secondAttribute="top" constant="20" id="JNe-PB-bDl"/>
+                            <constraint firstItem="YLk-a8-206" firstAttribute="centerX" secondItem="gtr-hW-vK4" secondAttribute="centerX" id="gad-VU-Kqf"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Banner" id="Mlr-mV-2OG"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="banner" destination="YLk-a8-206" id="o8f-va-C4P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WmV-Ai-inl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-875" y="-575"/>
+        </scene>
+        <!--Rewarded-->
+        <scene sceneID="z7N-Td-A6J">
+            <objects>
+                <viewController id="9Rz-vo-X8c" customClass="Rewarded" customModule="BidMachineSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pg9-yg-bdI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Cvg-xG-CoG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Rewarded" id="5hM-lL-re3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GxH-L4-tNH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="899" y="100"/>
+        </scene>
+        <!--Interstitial-->
+        <scene sceneID="hD1-Jo-qW7">
+            <objects>
+                <viewController id="RkP-kb-Xap" customClass="Interstitial" customModule="BidMachineSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cBK-xm-TFD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="2er-h9-JTE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Interstitial" id="89o-cs-a8b"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pJC-5q-94L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="899" y="-547"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="kgU-8T-U54">
+            <objects>
+                <tabBarController id="ABZ-dS-EdI" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="edw-gP-cVQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="RkP-kb-Xap" kind="relationship" relationship="viewControllers" id="hiw-Km-Ut8"/>
+                        <segue destination="9Rz-vo-X8c" kind="relationship" relationship="viewControllers" id="iQ6-Re-5v8"/>
+                        <segue destination="ClG-0x-kf3" kind="relationship" relationship="viewControllers" id="ucy-la-P1q"/>
+                        <segue destination="dJp-gT-bqi" kind="relationship" relationship="viewControllers" id="zfQ-IJ-p73"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y8x-wS-YPK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-19" y="-223"/>
+        </scene>
+        <!--ABanner-->
+        <scene sceneID="7ve-qm-j0u">
+            <objects>
+                <viewController id="dJp-gT-bqi" customClass="ABanner" customModule="BidMachineSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zTf-XL-QFx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PDS-9V-xWm" customClass="BMMAutorefreshBanner">
+                                <rect key="frame" x="47" y="88" width="320" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LLs-Tw-nzD"/>
+                                    <constraint firstAttribute="width" constant="320" id="fSi-uS-ocq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fnv-MU-yLm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PDS-9V-xWm" firstAttribute="centerX" secondItem="zTf-XL-QFx" secondAttribute="centerX" id="6bH-zK-lRa"/>
+                            <constraint firstItem="PDS-9V-xWm" firstAttribute="top" secondItem="fnv-MU-yLm" secondAttribute="top" constant="44" id="BzT-gg-Wdx"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="ABanner" id="Auf-js-djr"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="banner" destination="PDS-9V-xWm" id="y7V-Wb-mO7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zys-Iw-CJL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1571" y="-468"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

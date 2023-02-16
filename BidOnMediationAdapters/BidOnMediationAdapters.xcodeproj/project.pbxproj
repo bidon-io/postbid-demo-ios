@@ -1,0 +1,870 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2DA601F92078C8CFD918C311 /* libPods-BidOnAdMobMediationAdapter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF428972C7C14A64D1057BD /* libPods-BidOnAdMobMediationAdapter.a */; };
+		652FD770299CF2AF0024D7BD /* BidOnBidMachineMediationAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 652FD76F299CF2AF0024D7BD /* BidOnBidMachineMediationAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		652FD788299CF30F0024D7BD /* BidOnApplovinMediationAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 652FD787299CF30F0024D7BD /* BidOnApplovinMediationAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		652FD794299CF3420024D7BD /* BidOnAdMobMediationAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 652FD793299CF3420024D7BD /* BidOnAdMobMediationAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		652FD798299D03E30024D7BD /* AdMobParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6590018E28536FB4006404F2 /* AdMobParams.swift */; };
+		652FD799299D03E30024D7BD /* AdMobNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65808FC6282C2877007AB10C /* AdMobNetwork.swift */; };
+		652FD79A299D03E30024D7BD /* AdMobRewardedAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65808FCC282C28BA007AB10C /* AdMobRewardedAdapter.swift */; };
+		652FD79B299D03E30024D7BD /* AdMobInterstitialAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65808FC8282C2896007AB10C /* AdMobInterstitialAdapter.swift */; };
+		652FD79C299D03E30024D7BD /* AdMobBannerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65808FCA282C28AD007AB10C /* AdMobBannerAdapter.swift */; };
+		652FD79D299D03F30024D7BD /* ApplovinParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6590018C28533888006404F2 /* ApplovinParams.swift */; };
+		652FD79E299D03F30024D7BD /* ApplovinInterstitialAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65808F9C282A8EA4007AB10C /* ApplovinInterstitialAdapter.swift */; };
+		652FD79F299D03F30024D7BD /* ApplovinRewardedAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65808FB3282C0299007AB10C /* ApplovinRewardedAdapter.swift */; };
+		652FD7A0299D03F30024D7BD /* ApplovinBannerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65808FB1282C0285007AB10C /* ApplovinBannerAdapter.swift */; };
+		652FD7A1299D03F30024D7BD /* ApplovinNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65808F9A282A8E2B007AB10C /* ApplovinNetwork.swift */; };
+		652FD7A2299D04020024D7BD /* BidMachineParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6590018A28522170006404F2 /* BidMachineParams.swift */; };
+		652FD7A3299D04020024D7BD /* BidMachineNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65808F7B282A43AD007AB10C /* BidMachineNetwork.swift */; };
+		652FD7A4299D04020024D7BD /* BidMachineBannerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65808F7F282A4542007AB10C /* BidMachineBannerAdapter.swift */; };
+		652FD7A5299D04020024D7BD /* BidMachineInterstitialAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65808F81282A5968007AB10C /* BidMachineInterstitialAdapter.swift */; };
+		652FD7A6299D04020024D7BD /* BidMachineRewardedAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65808F83282A597E007AB10C /* BidMachineRewardedAdapter.swift */; };
+		65F1C7F1299D4A97008A3BA0 /* BidOnMediationSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F1C7F0299D4A97008A3BA0 /* BidOnMediationSdk.framework */; };
+		65F1C7F3299D4A9E008A3BA0 /* BidOnMediationSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F1C7F2299D4A9E008A3BA0 /* BidOnMediationSdk.framework */; };
+		65F1C7F5299D4AA5008A3BA0 /* BidOnMediationSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F1C7F4299D4AA5008A3BA0 /* BidOnMediationSdk.framework */; };
+		6DFFAEEF3A4C552797C75E72 /* libPods-BidOnBidMachineMediationAdapter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5CF09339465A1A518478E3 /* libPods-BidOnBidMachineMediationAdapter.a */; };
+		8DC21DC5643B4C8512503150 /* libPods-BidOnApplovinMediationAdapter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5610400F80F001040F74E00A /* libPods-BidOnApplovinMediationAdapter.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		15D6FFDA5F7A44B77240DE90 /* Pods-BidOnAdMobMediationAdapter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BidOnAdMobMediationAdapter.release.xcconfig"; path = "Target Support Files/Pods-BidOnAdMobMediationAdapter/Pods-BidOnAdMobMediationAdapter.release.xcconfig"; sourceTree = "<group>"; };
+		27FD9BE33C2E45DD4E95DA41 /* Pods-BidOnBidMachineMediationAdapter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BidOnBidMachineMediationAdapter.release.xcconfig"; path = "Target Support Files/Pods-BidOnBidMachineMediationAdapter/Pods-BidOnBidMachineMediationAdapter.release.xcconfig"; sourceTree = "<group>"; };
+		2DF428972C7C14A64D1057BD /* libPods-BidOnAdMobMediationAdapter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BidOnAdMobMediationAdapter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		322B8B6DE50467D194EF9C53 /* Pods-BidOnApplovinMediationAdapter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BidOnApplovinMediationAdapter.release.xcconfig"; path = "Target Support Files/Pods-BidOnApplovinMediationAdapter/Pods-BidOnApplovinMediationAdapter.release.xcconfig"; sourceTree = "<group>"; };
+		3A5CF09339465A1A518478E3 /* libPods-BidOnBidMachineMediationAdapter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BidOnBidMachineMediationAdapter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5610400F80F001040F74E00A /* libPods-BidOnApplovinMediationAdapter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BidOnApplovinMediationAdapter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		652FD76D299CF2AE0024D7BD /* BidOnBidMachineMediationAdapter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BidOnBidMachineMediationAdapter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		652FD76F299CF2AF0024D7BD /* BidOnBidMachineMediationAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BidOnBidMachineMediationAdapter.h; sourceTree = "<group>"; };
+		652FD785299CF30F0024D7BD /* BidOnApplovinMediationAdapter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BidOnApplovinMediationAdapter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		652FD787299CF30F0024D7BD /* BidOnApplovinMediationAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BidOnApplovinMediationAdapter.h; sourceTree = "<group>"; };
+		652FD791299CF3420024D7BD /* BidOnAdMobMediationAdapter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BidOnAdMobMediationAdapter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		652FD793299CF3420024D7BD /* BidOnAdMobMediationAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BidOnAdMobMediationAdapter.h; sourceTree = "<group>"; };
+		652FD7A7299D08A30024D7BD /* BidOnMediationModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BidOnMediationModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		652FD7A9299D08AA0024D7BD /* BidOnMediationModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BidOnMediationModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		652FD7AB299D08B10024D7BD /* BidOnMediationModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BidOnMediationModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65808F5C28298C4B007AB10C /* BidMachineMediationModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BidMachineMediationModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65808F79282A437F007AB10C /* BidMachineMediationModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BidMachineMediationModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65808F7B282A43AD007AB10C /* BidMachineNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidMachineNetwork.swift; sourceTree = "<group>"; };
+		65808F7F282A4542007AB10C /* BidMachineBannerAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidMachineBannerAdapter.swift; sourceTree = "<group>"; };
+		65808F81282A5968007AB10C /* BidMachineInterstitialAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidMachineInterstitialAdapter.swift; sourceTree = "<group>"; };
+		65808F83282A597E007AB10C /* BidMachineRewardedAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidMachineRewardedAdapter.swift; sourceTree = "<group>"; };
+		65808F96282A8DDB007AB10C /* BidMachineMediationModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BidMachineMediationModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65808F9A282A8E2B007AB10C /* ApplovinNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplovinNetwork.swift; sourceTree = "<group>"; };
+		65808F9C282A8EA4007AB10C /* ApplovinInterstitialAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplovinInterstitialAdapter.swift; sourceTree = "<group>"; };
+		65808FA9282A9476007AB10C /* BidMachineMediationModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BidMachineMediationModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65808FB1282C0285007AB10C /* ApplovinBannerAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplovinBannerAdapter.swift; sourceTree = "<group>"; };
+		65808FB3282C0299007AB10C /* ApplovinRewardedAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplovinRewardedAdapter.swift; sourceTree = "<group>"; };
+		65808FC2282C2848007AB10C /* BidMachineMediationModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BidMachineMediationModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65808FC6282C2877007AB10C /* AdMobNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobNetwork.swift; sourceTree = "<group>"; };
+		65808FC8282C2896007AB10C /* AdMobInterstitialAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobInterstitialAdapter.swift; sourceTree = "<group>"; };
+		65808FCA282C28AD007AB10C /* AdMobBannerAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobBannerAdapter.swift; sourceTree = "<group>"; };
+		65808FCC282C28BA007AB10C /* AdMobRewardedAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobRewardedAdapter.swift; sourceTree = "<group>"; };
+		6590018A28522170006404F2 /* BidMachineParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidMachineParams.swift; sourceTree = "<group>"; };
+		6590018C28533888006404F2 /* ApplovinParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplovinParams.swift; sourceTree = "<group>"; };
+		6590018E28536FB4006404F2 /* AdMobParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobParams.swift; sourceTree = "<group>"; };
+		65F1C7F0299D4A97008A3BA0 /* BidOnMediationSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BidOnMediationSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F1C7F2299D4A9E008A3BA0 /* BidOnMediationSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BidOnMediationSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F1C7F4299D4AA5008A3BA0 /* BidOnMediationSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BidOnMediationSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E3875C5F35447A264BB7E0F /* Pods-BidOnAdMobMediationAdapter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BidOnAdMobMediationAdapter.debug.xcconfig"; path = "Target Support Files/Pods-BidOnAdMobMediationAdapter/Pods-BidOnAdMobMediationAdapter.debug.xcconfig"; sourceTree = "<group>"; };
+		984CC395932D4110AB8CA207 /* Pods-BidOnBidMachineMediationAdapter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BidOnBidMachineMediationAdapter.debug.xcconfig"; path = "Target Support Files/Pods-BidOnBidMachineMediationAdapter/Pods-BidOnBidMachineMediationAdapter.debug.xcconfig"; sourceTree = "<group>"; };
+		A50E717BAC2C7C47713D6F57 /* Pods-BidOnApplovinMediationAdapter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BidOnApplovinMediationAdapter.debug.xcconfig"; path = "Target Support Files/Pods-BidOnApplovinMediationAdapter/Pods-BidOnApplovinMediationAdapter.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		652FD76A299CF2AE0024D7BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F1C7F1299D4A97008A3BA0 /* BidOnMediationSdk.framework in Frameworks */,
+				6DFFAEEF3A4C552797C75E72 /* libPods-BidOnBidMachineMediationAdapter.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652FD782299CF30F0024D7BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F1C7F3299D4A9E008A3BA0 /* BidOnMediationSdk.framework in Frameworks */,
+				8DC21DC5643B4C8512503150 /* libPods-BidOnApplovinMediationAdapter.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652FD78E299CF3420024D7BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F1C7F5299D4AA5008A3BA0 /* BidOnMediationSdk.framework in Frameworks */,
+				2DA601F92078C8CFD918C311 /* libPods-BidOnAdMobMediationAdapter.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		652FD76E299CF2AF0024D7BD /* BidOnBidMachineMediationAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				652FD76F299CF2AF0024D7BD /* BidOnBidMachineMediationAdapter.h */,
+				6590018A28522170006404F2 /* BidMachineParams.swift */,
+				65808F7B282A43AD007AB10C /* BidMachineNetwork.swift */,
+				65808F7F282A4542007AB10C /* BidMachineBannerAdapter.swift */,
+				65808F81282A5968007AB10C /* BidMachineInterstitialAdapter.swift */,
+				65808F83282A597E007AB10C /* BidMachineRewardedAdapter.swift */,
+			);
+			path = BidOnBidMachineMediationAdapter;
+			sourceTree = "<group>";
+		};
+		652FD786299CF30F0024D7BD /* BidOnApplovinMediationAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				652FD787299CF30F0024D7BD /* BidOnApplovinMediationAdapter.h */,
+				6590018C28533888006404F2 /* ApplovinParams.swift */,
+				65808F9A282A8E2B007AB10C /* ApplovinNetwork.swift */,
+				65808FB1282C0285007AB10C /* ApplovinBannerAdapter.swift */,
+				65808F9C282A8EA4007AB10C /* ApplovinInterstitialAdapter.swift */,
+				65808FB3282C0299007AB10C /* ApplovinRewardedAdapter.swift */,
+			);
+			path = BidOnApplovinMediationAdapter;
+			sourceTree = "<group>";
+		};
+		652FD792299CF3420024D7BD /* BidOnAdMobMediationAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				652FD793299CF3420024D7BD /* BidOnAdMobMediationAdapter.h */,
+				6590018E28536FB4006404F2 /* AdMobParams.swift */,
+				65808FC6282C2877007AB10C /* AdMobNetwork.swift */,
+				65808FCA282C28AD007AB10C /* AdMobBannerAdapter.swift */,
+				65808FC8282C2896007AB10C /* AdMobInterstitialAdapter.swift */,
+				65808FCC282C28BA007AB10C /* AdMobRewardedAdapter.swift */,
+			);
+			path = BidOnAdMobMediationAdapter;
+			sourceTree = "<group>";
+		};
+		65808F4828298BE1007AB10C = {
+			isa = PBXGroup;
+			children = (
+				652FD76E299CF2AF0024D7BD /* BidOnBidMachineMediationAdapter */,
+				652FD786299CF30F0024D7BD /* BidOnApplovinMediationAdapter */,
+				652FD792299CF3420024D7BD /* BidOnAdMobMediationAdapter */,
+				65808F5228298BE1007AB10C /* Products */,
+				65808F5B28298C4B007AB10C /* Frameworks */,
+				9E33C18993140DFA0092C6BD /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		65808F5228298BE1007AB10C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				652FD76D299CF2AE0024D7BD /* BidOnBidMachineMediationAdapter.framework */,
+				652FD785299CF30F0024D7BD /* BidOnApplovinMediationAdapter.framework */,
+				652FD791299CF3420024D7BD /* BidOnAdMobMediationAdapter.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65808F5B28298C4B007AB10C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65F1C7F4299D4AA5008A3BA0 /* BidOnMediationSdk.framework */,
+				65F1C7F2299D4A9E008A3BA0 /* BidOnMediationSdk.framework */,
+				65F1C7F0299D4A97008A3BA0 /* BidOnMediationSdk.framework */,
+				652FD7AB299D08B10024D7BD /* BidOnMediationModule.framework */,
+				652FD7A9299D08AA0024D7BD /* BidOnMediationModule.framework */,
+				652FD7A7299D08A30024D7BD /* BidOnMediationModule.framework */,
+				65808FC2282C2848007AB10C /* BidMachineMediationModule.framework */,
+				65808FA9282A9476007AB10C /* BidMachineMediationModule.framework */,
+				65808F96282A8DDB007AB10C /* BidMachineMediationModule.framework */,
+				65808F79282A437F007AB10C /* BidMachineMediationModule.framework */,
+				65808F5C28298C4B007AB10C /* BidMachineMediationModule.framework */,
+				2DF428972C7C14A64D1057BD /* libPods-BidOnAdMobMediationAdapter.a */,
+				5610400F80F001040F74E00A /* libPods-BidOnApplovinMediationAdapter.a */,
+				3A5CF09339465A1A518478E3 /* libPods-BidOnBidMachineMediationAdapter.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E33C18993140DFA0092C6BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E3875C5F35447A264BB7E0F /* Pods-BidOnAdMobMediationAdapter.debug.xcconfig */,
+				15D6FFDA5F7A44B77240DE90 /* Pods-BidOnAdMobMediationAdapter.release.xcconfig */,
+				A50E717BAC2C7C47713D6F57 /* Pods-BidOnApplovinMediationAdapter.debug.xcconfig */,
+				322B8B6DE50467D194EF9C53 /* Pods-BidOnApplovinMediationAdapter.release.xcconfig */,
+				984CC395932D4110AB8CA207 /* Pods-BidOnBidMachineMediationAdapter.debug.xcconfig */,
+				27FD9BE33C2E45DD4E95DA41 /* Pods-BidOnBidMachineMediationAdapter.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		652FD768299CF2AE0024D7BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652FD770299CF2AF0024D7BD /* BidOnBidMachineMediationAdapter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652FD780299CF30F0024D7BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652FD788299CF30F0024D7BD /* BidOnApplovinMediationAdapter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652FD78C299CF3420024D7BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652FD794299CF3420024D7BD /* BidOnAdMobMediationAdapter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		652FD76C299CF2AE0024D7BD /* BidOnBidMachineMediationAdapter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 652FD771299CF2AF0024D7BD /* Build configuration list for PBXNativeTarget "BidOnBidMachineMediationAdapter" */;
+			buildPhases = (
+				8A6ABE8644E9CC59768A8FA5 /* [CP] Check Pods Manifest.lock */,
+				652FD768299CF2AE0024D7BD /* Headers */,
+				652FD769299CF2AE0024D7BD /* Sources */,
+				652FD76A299CF2AE0024D7BD /* Frameworks */,
+				652FD76B299CF2AE0024D7BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BidOnBidMachineMediationAdapter;
+			productName = BidOnBidMachineMediationAdapter;
+			productReference = 652FD76D299CF2AE0024D7BD /* BidOnBidMachineMediationAdapter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		652FD784299CF30F0024D7BD /* BidOnApplovinMediationAdapter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 652FD789299CF30F0024D7BD /* Build configuration list for PBXNativeTarget "BidOnApplovinMediationAdapter" */;
+			buildPhases = (
+				928678AEBA70ED0631B58E87 /* [CP] Check Pods Manifest.lock */,
+				652FD780299CF30F0024D7BD /* Headers */,
+				652FD781299CF30F0024D7BD /* Sources */,
+				652FD782299CF30F0024D7BD /* Frameworks */,
+				652FD783299CF30F0024D7BD /* Resources */,
+				AD6269774C0BA2F8D3DD4F18 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BidOnApplovinMediationAdapter;
+			productName = BidOnApplovinMediationAdapter;
+			productReference = 652FD785299CF30F0024D7BD /* BidOnApplovinMediationAdapter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		652FD790299CF3420024D7BD /* BidOnAdMobMediationAdapter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 652FD795299CF3420024D7BD /* Build configuration list for PBXNativeTarget "BidOnAdMobMediationAdapter" */;
+			buildPhases = (
+				11DD755D2AE0614CD729B8DC /* [CP] Check Pods Manifest.lock */,
+				652FD78C299CF3420024D7BD /* Headers */,
+				652FD78D299CF3420024D7BD /* Sources */,
+				652FD78E299CF3420024D7BD /* Frameworks */,
+				652FD78F299CF3420024D7BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BidOnAdMobMediationAdapter;
+			productName = BidOnAdMobMediationAdapter;
+			productReference = 652FD791299CF3420024D7BD /* BidOnAdMobMediationAdapter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65808F4928298BE1007AB10C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					652FD76C299CF2AE0024D7BD = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					652FD784299CF30F0024D7BD = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					652FD790299CF3420024D7BD = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 65808F4C28298BE1007AB10C /* Build configuration list for PBXProject "BidOnMediationAdapters" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65808F4828298BE1007AB10C;
+			productRefGroup = 65808F5228298BE1007AB10C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				652FD76C299CF2AE0024D7BD /* BidOnBidMachineMediationAdapter */,
+				652FD784299CF30F0024D7BD /* BidOnApplovinMediationAdapter */,
+				652FD790299CF3420024D7BD /* BidOnAdMobMediationAdapter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		652FD76B299CF2AE0024D7BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652FD783299CF30F0024D7BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652FD78F299CF3420024D7BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11DD755D2AE0614CD729B8DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BidOnAdMobMediationAdapter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A6ABE8644E9CC59768A8FA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BidOnBidMachineMediationAdapter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		928678AEBA70ED0631B58E87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BidOnApplovinMediationAdapter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD6269774C0BA2F8D3DD4F18 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BidOnApplovinMediationAdapter/Pods-BidOnApplovinMediationAdapter-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BidOnApplovinMediationAdapter/Pods-BidOnApplovinMediationAdapter-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BidOnApplovinMediationAdapter/Pods-BidOnApplovinMediationAdapter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		652FD769299CF2AE0024D7BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652FD7A3299D04020024D7BD /* BidMachineNetwork.swift in Sources */,
+				652FD7A4299D04020024D7BD /* BidMachineBannerAdapter.swift in Sources */,
+				652FD7A2299D04020024D7BD /* BidMachineParams.swift in Sources */,
+				652FD7A6299D04020024D7BD /* BidMachineRewardedAdapter.swift in Sources */,
+				652FD7A5299D04020024D7BD /* BidMachineInterstitialAdapter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652FD781299CF30F0024D7BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652FD7A1299D03F30024D7BD /* ApplovinNetwork.swift in Sources */,
+				652FD79E299D03F30024D7BD /* ApplovinInterstitialAdapter.swift in Sources */,
+				652FD79D299D03F30024D7BD /* ApplovinParams.swift in Sources */,
+				652FD7A0299D03F30024D7BD /* ApplovinBannerAdapter.swift in Sources */,
+				652FD79F299D03F30024D7BD /* ApplovinRewardedAdapter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652FD78D299CF3420024D7BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652FD799299D03E30024D7BD /* AdMobNetwork.swift in Sources */,
+				652FD79B299D03E30024D7BD /* AdMobInterstitialAdapter.swift in Sources */,
+				652FD798299D03E30024D7BD /* AdMobParams.swift in Sources */,
+				652FD79A299D03E30024D7BD /* AdMobRewardedAdapter.swift in Sources */,
+				652FD79C299D03E30024D7BD /* AdMobBannerAdapter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		652FD772299CF2AF0024D7BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 984CC395932D4110AB8CA207 /* Pods-BidOnBidMachineMediationAdapter.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = WG4VFF78ZM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BidOn.BidOnBidMachineMediationAdapter;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		652FD773299CF2AF0024D7BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27FD9BE33C2E45DD4E95DA41 /* Pods-BidOnBidMachineMediationAdapter.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = WG4VFF78ZM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BidOn.BidOnBidMachineMediationAdapter;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		652FD78A299CF30F0024D7BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A50E717BAC2C7C47713D6F57 /* Pods-BidOnApplovinMediationAdapter.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = WG4VFF78ZM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BidOn.BidOnApplovinMediationAdapter;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		652FD78B299CF30F0024D7BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 322B8B6DE50467D194EF9C53 /* Pods-BidOnApplovinMediationAdapter.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = WG4VFF78ZM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BidOn.BidOnApplovinMediationAdapter;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		652FD796299CF3420024D7BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E3875C5F35447A264BB7E0F /* Pods-BidOnAdMobMediationAdapter.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = WG4VFF78ZM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BidOn.BidOnAdMobMediationAdapter;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		652FD797299CF3420024D7BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15D6FFDA5F7A44B77240DE90 /* Pods-BidOnAdMobMediationAdapter.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = WG4VFF78ZM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BidOn.BidOnAdMobMediationAdapter;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		65808F5628298BE1007AB10C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		65808F5728298BE1007AB10C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		652FD771299CF2AF0024D7BD /* Build configuration list for PBXNativeTarget "BidOnBidMachineMediationAdapter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				652FD772299CF2AF0024D7BD /* Debug */,
+				652FD773299CF2AF0024D7BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		652FD789299CF30F0024D7BD /* Build configuration list for PBXNativeTarget "BidOnApplovinMediationAdapter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				652FD78A299CF30F0024D7BD /* Debug */,
+				652FD78B299CF30F0024D7BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		652FD795299CF3420024D7BD /* Build configuration list for PBXNativeTarget "BidOnAdMobMediationAdapter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				652FD796299CF3420024D7BD /* Debug */,
+				652FD797299CF3420024D7BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65808F4C28298BE1007AB10C /* Build configuration list for PBXProject "BidOnMediationAdapters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65808F5628298BE1007AB10C /* Debug */,
+				65808F5728298BE1007AB10C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65808F4928298BE1007AB10C /* Project object */;
+}

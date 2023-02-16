@@ -39,7 +39,7 @@ Flow is the following:
 
 After loading ads:
 
-[Example:](BidOnMediationAdapters/BidOnApplovinMediationAdapter/ApplovinRewardedAdapter.swift:L58)
+[Example:](BidOnMediationAdapters/BidOnApplovinMediationAdapter/ApplovinRewardedAdapter.swift#L58)
 
 ```swift
 
@@ -53,7 +53,7 @@ func didLoad(_ ad: MAAd) {
 
 After loading ads:
 
-[Example:](BidOnMediationAdapters/BidOnBidMachineMediationAdapter/BidMachineRewardedAdapter.swift:L69)
+[Example:](BidOnMediationAdapters/BidOnBidMachineMediationAdapter/BidMachineRewardedAdapter.swift#L69)
 
 ```swift
 
@@ -77,7 +77,7 @@ For each ad unit, you need to set up an eCPM floor <br />
 3. Make a request with this adUnit
 4. If this adUnit retuned fill - it should be used din postBid auction
 
-[Example:](BidOnMediationAdapters/BidOnAdMobMediationAdapter/AdMobRewardedAdapter.swift:L53)
+[Example:](BidOnMediationAdapters/BidOnAdMobMediationAdapter/AdMobRewardedAdapter.swift#L53)
 
 ```swift
 
@@ -89,7 +89,7 @@ GADRewardedAd.load(withAdUnitID:  "ca-app-pub-0000000000000000/0000000000", requ
 
  1. request with price
 
-[Example:](BidOnMediationAdapters/BidOnBidMachineMediationAdapter/BidMachineRewardedAdapter.swift:L30)
+[Example:](BidOnMediationAdapters/BidOnBidMachineMediationAdapter/BidMachineRewardedAdapter.swift#L30)
 
 ```swift
 
@@ -116,7 +116,7 @@ func load() {
 ```
 2. If ad returned fill, then its price can be fetched with this method
 
-[Example:](BidOnMediationAdapters/BidOnBidMachineMediationAdapter/BidMachineRewardedAdapter.swift:L69)
+[Example:](BidOnMediationAdapters/BidOnBidMachineMediationAdapter/BidMachineRewardedAdapter.swift#L69)
 
 ```swift
 
@@ -130,7 +130,7 @@ func didLoadAd(_ ad: BidMachine.BidMachineAdProtocol) {
 
 After prebid and postbid auctions, you need to select the ad with the maximum price and show it
 
-[Example:](BidOnMediationSdk/BidOnMediationSdk/Extensions.swift:L5)
+[Example:](BidOnMediationSdk/BidOnMediationSdk/Extensions.swift#L5)
 
 ```swift
 
